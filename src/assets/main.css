@@ -1,0 +1,139 @@
+/* Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif !important;
+
+}
+body{
+   background: 	#E8E8E8;
+}
+
+
+#intro {
+    min-width: 50%;
+    width: 20em;
+}
+.sideBarButton{
+    display: none;
+}
+.registration {
+    height: 100vh;
+}
+
+
+#intro h2, #intro h6 {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+.register-form {
+    margin-top: 17em;
+    padding-left: 2em;
+}
+
+.login-form {
+    margin-top: 21em;
+    padding-left: 2em;
+}
+
+#navbar {
+    z-index: 8;
+}
+/* sidebar */
+
+
+#side_nav{
+    font-size: 20px;
+    height: 90vh;
+    width: 300px;
+    z-index: 4;
+
+}
+
+#side_nav ul, #side_nav li, #side_nav a{
+    width: 100%;
+    margin: 0;
+}
+
+
+.conversations{
+    width: 88%;
+    max-height: 580px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+hr.h-color{
+    background: white;
+}
+
+.side-bar li.active{
+    background: #eee;
+    border-radius: 8px;
+}
+
+.display-sideBar{
+    display: block;
+}
+.sidebar li.active a, .sidebar li.active a:hover{
+    background: #eee;
+    color: rgb(13,110,253);
+}
+/*side bar transition */
+.slide-fade-enter-active {
+    transition: all .8s ease;
+}
+.slide-fade-leave-active {
+    transition: all .8s ease;
+}
+.slide-fade-enter-from,
+
+.slide-fade-leave-to
+    /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(-100%);
+    transition: all .5s ease-in 0s;
+    opacity: 0;
+}
+
+.messenger{
+    margin-left: 2em;
+    margin-top: 2em;
+}
+.content{
+    min-width: 100%;
+    padding-left:20em;
+}
+
+@media screen and  ( max-width: 991px) {
+    .register-form, .login-form {
+        margin-top: 5em !important;
+        margin-bottom: 2em !important;
+        padding-left: 0;
+    }
+    .sideBarButton{
+        display: block;
+    }
+
+    .content{
+        min-width: 100%;
+        padding-left: 0;
+    }
+
+    .registration {
+        height: 40vh;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .auth-form {
+        width: 80%;
+    }
+
+    #intro-col {
+        display: none;
+    }
+}
